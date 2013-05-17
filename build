@@ -129,10 +129,10 @@ echo 'Updating packages'
 
 # Take ownership
 echo 'Correcting permissions'
-/bin/chown -R elasticbeanstalk:elasticbeanstalk /etc/nginx/conf.d \
-                                                /opt/elasticbeanstalk \
-                                                /var/log/nginx \
-                                                /var/log/php-fpm
+/bin/chown -R ec2-user /etc/nginx/conf.d \
+                    /opt/elasticbeanstalk \
+                    /var/log/nginx \
+                    /var/log/php-fpm
 
 # Clear unneeded files
 echo 'Clearing unneeded files'
